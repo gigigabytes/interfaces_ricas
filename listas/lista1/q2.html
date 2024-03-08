@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Solicitação de Nome</title>
+    <script>
+        function solicitarNome() {
+            var nome = prompt("Digite seu nome:");
+            if (nome !== null && nome !== "") {
+                document.getElementById("nomeDigitado").innerText = "Nome digitado: " + nome;
+            } else {
+                document.getElementById("nomeDigitado").innerText = "Você não digitou um nome.";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="solicitarNome()">Clique para inserir nome</button>
+    <p id="nomeDigitado"></p>
+
+</body>
+</html>

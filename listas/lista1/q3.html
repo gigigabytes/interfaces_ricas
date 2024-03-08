@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Operações com Números</title>
+    <script>
+        function realizarOperacoes() {
+            var numero = prompt("Digite um número:");
+            if (numero !== null && numero !== "") {
+                // Converte o input para um número
+                numero = parseFloat(numero);
+
+                // Calcula e exibe o dobro no documento
+                document.getElementById("dobroNumero").innerText = "Dobro do número: " + (2 * numero);
+
+                // Calcula e exibe a metade no console do navegador
+                console.log("Metade do número: " + (numero / 2));
+            } else {
+                alert("Você não digitou um número válido.");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="realizarOperacoes()">Clique para inserir número</button>
+    <p id="dobroNumero"></p>
+
+</body>
+</html>
